@@ -114,6 +114,61 @@ img {
 	justify-content: space-between;
 	column-gap: 3.75rem;
 }
+
+.topbar-list, 
+.topbar-socials, 
+.topbar-shipping {
+	display: flex;
+}
+
+.topbar-list {
+	column-gap: 3rem;
+}
+
+.topbar-item {
+	position: relative;
+}
+
+.topbar-item:not(:last-child)::before {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background-color: var(--white-color);
+	right: -1.5rem;
+}
+
+.topbar-link, 
+.topbar-text {
+	color: var(--white-color);
+	font-weight: var(--weight-500);
+	text-transform: uppercase;
+}
+
+.topbar-socials {
+	column-gap: 0.5rem;
+	margin-right: auto;
+}
+
+.topbar-social-link {
+	width: 38px;
+	aspect-ratio: 1/1;
+	background-color: var(--white-color);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: var(--large-font-size);
+	transition: all 0.3s ease;
+}
+
+.topbar-social-link:hover {
+	background-color: var(--first-color);
+	color: var(--white-color);
+}
+
+.topbar-shipping {
+	column-gap: 1rem;
+}
 /*========== Bottom bar ==========*/
 
 /*========== Navbar ==========*/
