@@ -7,5 +7,11 @@
 /* Validate if constant exists */
 
 /*==================== NAVBAR SELECT ====================*/
+NiceSelect.bind(document.getElementById("navbar-select"), { 
+    searchable: false, 
+    /* placeholder: 'select', 
+    searchtext: 'zoek', 
+    selectedtext: 'geselecteerd'  */
+});
 
 /*==================== SHOW SCROLL UP ====================*/
