@@ -6,14 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!--=============== REMIXICON ===============-->
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet"/>
+		<link 
+			href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" 
+			rel="stylesheet"
+		/>
 		
 		<!--=============== SWIPER CSS ===============-->
-
+		<link
+			href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+			rel="stylesheet"
+		/>
 		<!--=============== NICE SELECT CSS ===============-->
 		<link rel="stylesheet" href="assets/css/nice-select2.css">
 		<!--=============== CSS ===============-->
 		<link rel="stylesheet" href="assets/css/styles.css">
+
 		<title>Responsive Ecommerce Website</title>
 	</head>
 
@@ -137,33 +144,77 @@
 			</nav>
 		</header>
 
-
 		<!--=============== MAIN ===============-->
+		<main class="main">
+			<!--=============== HOME ===============-->
+			<section class="home">
+				<div class="swiper home-swiper">
+					<div class="swiper-wrapper">
+						<!-- Slide 1 -->
+						<div class="swiper-slide" style="background: url(./assets/img/home-img-1.jpg)">
+							<div class="container">
+								<div class="home-tag">
+									<img src="assets/img/bolt.svg" alt="" class="home-img"> Top Trending
+								</div><!-- /.home-tag -->
 
-		<!--=============== HOME ===============-->
+								<h1 class="home-title">Classic Elegant Style Women</h1>
 
-		<!--=============== PRODUCTS ===============-->
+								<p class="home-description">
+									Discover timeless elegance and modern sophistication with our curated 
+									collection of women's fashion.
+								</p>
 
-		<!--=============== CATEGORIES ===============-->
+								<a href="shop.html" class="btn">Shop Now</a>
+							</div><!-- /.container -->
+						</div><!-- /.swiper-slide -->
 
-		<!--=============== FEATURES ===============-->
+						<!-- Slide 2 -->
+						<div class="swiper-slide" style="background: url(./assets/img/home-img-2.jpg)">
+							<div class="container">
+								<div class="home-tag">
+									<img src="assets/img/bolt.svg" alt="" class="home-img"> Top Trending
+								</div><!-- /.home-tag -->
 
-		<!--=============== PRODUCTS ===============-->
+								<h1 class="home-title">Classic Elegant Style Women</h1>
 
-		<!--=============== CATEGORY ===============-->
+								<p class="home-description">
+									Discover timeless elegance and modern sophistication with our curated 
+									collection of women's fashion.
+								</p>
 
-		<!--=============== NEWSLETTER ===============-->
+								<a href="shop.html" class="btn">Shop Now</a>
+							</div><!-- /.container -->
+						</div><!-- /.swiper-slide -->
+					</div><!-- /.swiper-wrapper -->
+
+					<div class="swiper-pagination"></div>
+				</div><!-- /.swiper -->
+			</section>
+			<!--=============== PRODUCTS ===============-->
+	
+			<!--=============== CATEGORIES ===============-->
+	
+			<!--=============== FEATURES ===============-->
+	
+			<!--=============== PRODUCTS ===============-->
+	
+			<!--=============== CATEGORY ===============-->
+	
+			<!--=============== NEWSLETTER ===============-->
+		</main>
 
 		<!--=============== FOOTER ===============-->
 
 		<!--=============== SCROLL UP ===============-->
 
 		<!--=============== SWIPER JS ===============-->
-
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 		<!--=============== NICE SELECT JS ===============-->
 		<script src="assets/js/nice-select2.js"></script>
 		<!--=============== MAIN JS ===============-->
 		<script src="assets/js/main.js"></script>
+		<!--=============== HOME JS ===============-->
+		<script src="assets/js/home.js"></script>
 	</body>
 
 </html>
