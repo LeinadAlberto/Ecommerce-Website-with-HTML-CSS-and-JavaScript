@@ -89,6 +89,43 @@ img {
 	max-width: 100%;
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+	padding-block: 7.5rem;
+}
+
+.section-title {
+	font-size: var(--h1-font-size);
+	margin-bottom: 3rem;
+	position: relative;
+}
+
+.title-center {
+	text-align: center;
+	max-width: 800px;
+	margin-inline: auto;
+	margin-bottom: 5rem;
+}
+
+.section-title::before {
+	content: attr(data-title);
+	display: block;
+	color: var(--text-color);
+	text-transform: uppercase;
+	font-size: var(--normal-font-size);
+	font-weight: var(--weight-500);
+	margin-bottom: 0.75rem;
+}
+
+.title-center::after {
+	content: '';
+	position: absolute;
+	background-color: var(--gray-color);
+	width: 300px;
+	height: 1px;
+	bottom: -1.75rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 /*=============== SECTION TITLE ===============*/
 
