@@ -132,6 +132,7 @@ img {
 /*=============== BUTTON ===============*/
 .btn {
 	display: inline-flex;
+	justify-content: center;
 	background-color: var(--first-color);
 	padding: 1rem 2.5rem;
 	border-radius: 2rem;
@@ -371,6 +372,135 @@ img {
 	width: 80px;
 }
 /*=============== PRODUCTS ===============*/
+.product-header {
+	border: 1px solid var(--border-color);
+	position: relative;
+}
+
+.product-img, 
+.product-content {
+	width: 100%;
+}
+
+.product-content {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: var(--container-color);
+	padding: 1.5rem;
+}
+
+.product-top, 
+.product-stars {
+	display: flex;
+	align-items: center;
+}
+
+.product-top {
+	justify-content: space-between;
+}
+
+.product-stars {
+	column-gap: 0.25rem;
+}
+
+.product-rating {
+	font-size: var(--small-font-size);
+	margin-left: 0.25rem;
+}
+
+.product-colors, 
+.product-size {
+	display: flex;
+	column-gap: 0.625rem;
+}
+
+.product-color-input, 
+.product-color {
+	width: 16px;
+	height: 16px;
+}
+
+.product-color {
+	background-color: var(--background-color);
+	display: block;
+	border-radius: 50%;
+}
+
+.product-color-input {
+	float: left;
+	opacity: 0;
+}
+
+.product-size {
+	margin-block: 1.125rem;
+}
+
+.product-size-label {
+	width: 42px;
+	height: 23px;
+	border: 1px solid var(--border-color);
+	display: grid;
+	place-items: center;
+	border-radius: 2rem;
+	font-size: var(--small-font-size);
+	line-height: 1.5;
+}
+
+.product-size-input {
+	display: none;
+}
+
+.product-btn, 
+.product-bottom {
+	display: flex;
+}
+
+.product-bottom {
+	justify-content: space-between;
+	padding-top: 1.24rem;
+}
+
+.product-title {
+	font-size: var(--large-font-size);
+	font-weight: var(--weight-500);
+	margin-bottom: .75rem;
+}
+
+.product-title a {
+	transition: color 0.3s ease;
+}
+
+.product-title:hover a, 
+.product-price {
+	color: var(--first-color);
+}
+
+.product-price {
+	font-size: var(--largest-font-size);
+}
+
+.product-wishlist {
+	font-size: var(--h4-font-size);
+}
+
+.product-card  .product-tag {
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	background-color: hsl(51, 100%, 67%);
+	color: var(--title-color);
+	width: 56px;
+	aspect-ratio: 1/1;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	text-transform: uppercase;
+	font-size: var(--small-font-size);
+	font-weight: var(--weight-700);
+}
+
+
 
 /*=============== CATEGORIES ===============*/
 
