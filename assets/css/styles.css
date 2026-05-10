@@ -375,6 +375,7 @@ img {
 .product-header {
 	border: 1px solid var(--border-color);
 	position: relative;
+	overflow: hidden;
 }
 
 .product-img, 
@@ -388,6 +389,12 @@ img {
 	bottom: 0;
 	background-color: var(--container-color);
 	padding: 1.5rem;
+	transform: translateY(7.5rem);
+	transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-content {
+	transform: translateY(0);
 }
 
 .product-top, 
@@ -498,6 +505,11 @@ img {
 	text-transform: uppercase;
 	font-size: var(--small-font-size);
 	font-weight: var(--weight-700);
+}
+
+.product-tag.new {
+	background-color: hsl(151, 87%, 36%);
+	color: var(--white-color);
 }
 
 
